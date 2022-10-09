@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css">
+   <title>Self 13</title>
+</head>
+<body>
+   <div class="wrapper">
+      <div class="first">
+         <header class="header">
+            <div class="head">
+               <div class="logo logo_text">
+                  logotip
+               </div>
+               <nav class="nav">
+                     <a href="#page1" class="link_text">page1</a>
+                     <a href="#page2" class="link_text">page2</a>
+                     <a href="#page3" class="link_text">page3</a>
+                     <a href="#page4" class="link_text">page4</a>
+               </nav>
+            </div>
+         </header>
+         <div class="page1">
+            <div class="container">
+               <div class="cont1">
+                  <div class="page1_content">
+                     <div class="page1_text">
+                        <p class="text1">
+                           Wellcome on my <br>site
+                        </p>
+                     </div>
+                     <div class="page1_img">
+                        <img src="img/img1.png" alt="icon">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <main class="main">
+         <div class="content">
+            <div id="page1" class="page1">
+               <div class="container">
+                  <div class="string">
+                     <p class="string_text string_text1">
+                        String--String-String--String
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div id="page2" class="page2">
+               <div class="container">
+                  <div class="page2_content">
+                     <div class="page2_text">
+                        -  look
+                     </div>
+                     <div class="page2_img"></div>
+                  </div>
+               </div>
+            </div>
+            <div id="page3" class="page3">
+               <div class="container">
+                  <div class="title3">
+                     <div class="page3_title">
+                        <div onclick="show2()" id="title1" class="title1">
+                           Title1
+                        </div>
+                        <div onclick="show()" id="title2" class="title2">
+                           Title2
+                        </div>
+                     </div>
+                  </div>
+                  <div class="page3_all">
+                     <div id="page3_content" class="page3_content">
+                        <div class="page3_card">
+                           <div class="page3_item">
+                              <div class="page3_img">
+                                 <img src="img/img31.png" alt="icon">
+                              </div>
+                              <div class="text31">
+                                 <br>most 
+                                 <br>beautiful
+                                 <br>girl
+                              </div>
+                           </div>
+                        </div>
+                        <div class="page3_card">
+                           <div class="page3_item">
+                              <div class="page3_img">
+                                 <img src="img/img32.png" alt="icon">
+                              </div>
+                              <div class="text31">
+                                 <br>most 
+                                 <br>beautiful
+                                 <br>girl
+                              </div>
+                           </div>
+                        </div>
+                        <div class="page3_card">
+                           <div class="page3_item">
+                              <div class="page3_img">
+                                 <img src="img/img33.png" alt="icon">
+                              </div>
+                              <div class="text31">
+                                 <br>most 
+                                 <br>beautiful
+                                 <br>girl
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="page3_content2" class="page3_content2">
+                        <div class="page3_text2">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia 
+                           architecto delectus eum alias totam a ullam modi nisi asperiores est.
+                        </div>
+                        <div class="page3_img2">
+                           <img src="img/img34.png" alt="icon">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <footer id="page4" class="footer">
+               <div class="footer_content">
+                  <div class="footer_soces">
+                     <a href="#" class="footer_soc">
+                        <img src="img/soc1.png" alt="icon">
+                     </a>
+                     <a href="#" class="footer_soc">
+                        <img src="img/soc2.png" alt="icon">
+                     </a>
+                     <a href="#" class="footer_soc">
+                        <img src="img/soc3.png" alt="icon">
+                     </a>
+                  </div>
+                  <div class="form1">
+                     <form action="#" class="form">
+                        <div class="group">
+                           <input type="text" class="input" placeholder=" ">
+                           <label class="label">
+                              String
+                           </label>
+                        </div>
+                        <div class="group">
+                           <input type="text" class="input" placeholder=" ">
+                           <label class="label">
+                              String
+                           </label>
+                        </div>
+                        <div class="btn1">
+                           <div class="btn" type="submit">
+                              Send
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </footer>
+         </div>
+         <div class="square">
+            <ul>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+            </ul>
+         </div>
+      </main>
+   </div>
+   <script src="js/jquery-1.9.1.min.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+      $(function(){
+      $('a[href^="#"]').click(function(){
+      var target = $(this).attr('href');
+      $('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
+      return false;
+      });
+      });
+   </script>
+</body>
+</html>
