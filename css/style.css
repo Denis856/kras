@@ -89,14 +89,14 @@ body {
   font-family: "Peralta", cursive;
   font-size: 40px;
   line-height: 52px;
-  color: #000000;
+  color: rgb(165, 149, 149);
   text-transform: capitalize;
 }
 
 .link_text {
   font-size: 32px;
   line-height: 38px;
-  color: #000000;
+  color: rgb(165, 149, 149);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
