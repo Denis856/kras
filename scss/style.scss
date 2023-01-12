@@ -169,7 +169,7 @@ ul {
    &__burger {
       display: none;
       position: relative;
-      z-index: 10;
+      z-index: 50;
       padding: 0 30px 0 20px;
       @media(max-width: $wd3) {
          padding: 0 20px 0 10px;
@@ -205,23 +205,39 @@ ul {
       }
       &.active {
          &:before {
-            top: 0;
+            position: fixed;
+            right: 10px;
+            top: 30px;
             transform: rotate(45deg);
             background: #fff;
+            @media(max-width: $wd4) {
+               top: 20px;
+            }
          }
       }
       &.active {
          & span {
+            position: fixed;
+            right: 10px;
+            top: 30px;
             opacity: 0;
             transform: scale(0.1);
             background: #fff;
+            @media(max-width: $wd4) {
+               top: 20px;
+            }
          }
       }
       &.active {
          &:after {
-            top: 0;
+            position: fixed;
+            right: 10px;
+            top: 30px;
             transform: rotate(-45deg);
             background: #fff;
+            @media(max-width: $wd4) {
+               top: 20px;
+            }
          }
       }
    }
@@ -232,7 +248,7 @@ ul {
       display: flex;
       align-items: center;
       @media(max-width: $wd3) {
-         position: absolute;
+         position: fixed;
          left: 50%;
          transform: translateX(-50%);
          flex-direction: column;
@@ -243,6 +259,7 @@ ul {
          background: rgba(0, 0, 0, 0.9);
          padding: 50px 0 0 0;
          transition: all .3s ease;
+         z-index: 50;
          &.active {
             top: 0;
          }
@@ -333,7 +350,7 @@ ul {
       }
       @media(max-width: $wd3) {
          justify-content: center;
-         padding: 0 0 0 0;
+         padding: 0 20px 0 0;
       }
    }
    &__courusel {
